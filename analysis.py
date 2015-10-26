@@ -16,13 +16,13 @@ import scipy.stats as stats
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 # create file handler which logs even debug messages
-fh = logging.FileHandler('analysis.log')
-fh.setLevel(logging.DEBUG)
+#fh = logging.FileHandler('analysis.log')
+#fh.setLevel(logging.DEBUG)
 # create console handler with a higher log level
-ch = logging.StreamHandler()
-ch.setLevel(logging.DEBUG)
-logger.addHandler(fh)
-logger.addHandler(ch)
+#ch = logging.StreamHandler()
+#ch.setLevel(logging.DEBUG)
+#logger.addHandler(fh)
+#logger.addHandler(ch)
 
 @log_durations(logger.debug)
 def perform_analysis(analysis, debug=False):
@@ -49,6 +49,9 @@ def perform_analysis(analysis, debug=False):
         logger.error("FAIL Can't perform meta-analysis on %s"
                      % ('single source' if sources else 'no data'))
         return
+
+    # store sample_df for reproducibility
+    sample_df = df
 
     # Calculating stats
     analysis.series_count = len(df.series_id.unique())
@@ -87,7 +90,7 @@ def perform_analysis(analysis, debug=False):
         # MetaAnalysis.objects.bulk_create(MetaAnalysis(**row) for row in rows)
 
     logger.info('DONE %s analysis', analysis.analysis_name)
-    return balanced
+    return sample_df, balanced
 
 def filter_sources(df, query, reason):
     start_sources = df.groupby(['series_id', 'platform_id']).ngroups
