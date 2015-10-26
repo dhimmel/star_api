@@ -237,12 +237,12 @@ def is_logged(df):
 #     if is_logged(data):
 #         return data
 #     return translate_negative_cols(np.log2(data))
-import rpy2.robjects as robjects
-
-r = robjects.r
-import pandas.rpy.common as com
 
 def impute_data(data):
+    import rpy2.robjects as robjects
+    r = robjects.r
+    import pandas.rpy.common as com
+
     # data.to_csv("data.csv")
     r.library("impute")
     r_data = com.convert_to_r_matrix(data)
@@ -283,4 +283,3 @@ def clean_data(data):
 
 if __name__ == "__main__":
     gene_data = query_gene_data("GSE4058","GPL2778")
-
