@@ -34,7 +34,7 @@ def perform_analysis(analysis, debug=False):
     logger.info('Matching sources: %d' % df.groupby(['series_id', 'platform_id']).ngroups)
 
     # Remove single-class sources
-    query = df.groupby(['series_id', 'platform_id']).sample_class.agg(lambda x: set(x)) >= {0, 1}
+    query = df.groupby(['series_id', 'platform_id']).sample_class.agg(lambda x: set(x)).map(lambda x: x >= {0, 1})
     df = filter_sources(df, query, 'as single-class')
 
     # Check for minimum number of samples
