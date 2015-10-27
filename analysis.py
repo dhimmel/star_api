@@ -48,10 +48,7 @@ def perform_analysis(analysis, debug=False):
     if sources <= 1:
         logger.error("FAIL Can't perform meta-analysis on %s"
                      % ('single source' if sources else 'no data'))
-        return
-
-    # store sample_df for reproducibility
-    sample_df = df
+        return df, None
 
     # Calculating stats
     analysis.series_count = len(df.series_id.unique())
@@ -90,7 +87,8 @@ def perform_analysis(analysis, debug=False):
         # MetaAnalysis.objects.bulk_create(MetaAnalysis(**row) for row in rows)
 
     logger.info('DONE %s analysis', analysis.analysis_name)
-    return sample_df, balanced
+    return df, balanced
+
 
 def filter_sources(df, query, reason):
     start_sources = df.groupby(['series_id', 'platform_id']).ngroups
