@@ -180,6 +180,21 @@ def get_analysis_df(case_query, control_query, modifier_query=""):
     return df.dropna(subset=["sample_class"])
 
 
+@log_durations(logger.debug)
+def load_gse(df, series_id):
+    gse_name = series_gse_name(series_id)
+    logger.debug('Loading data for %s, id = %d', gse_name, series_id)
+    gpl2data = {}
+    gpl2probes = {}
+
+    for platform_id in df.query("""series_id == %s""" % series_id).platform_id.unique():
+        gpl_name = platform_gpl_name(platform_id)
+        gpl2data[gpl_name] = get_data(series_id, platform_id)
+        gpl2probes[gpl_name] = get_probes(platform_id)
+    samples = df.query('series_id == %s' % series_id)
+    return Gse(gse_name, samples, gpl2data, gpl2probes)
+
+
 def query_record(id, table, id_field="id"):
     sql = """select * from %s where %s """ % (table, id_field) + """= %s"""
     cursor.execute(sql, (id,))
@@ -240,41 +255,6 @@ def get_matrix_filename(series_id, platform_id):
 
     raise LookupError("Can't find matrix file for series %s, platform %s"
                       % (series_id, platform_id))
-
-
-@log_durations(logger.debug)
-def get_data(series_id, platform_id):
-    matrixFilename = get_matrix_filename(series_id, platform_id)
-    # setup data for specific platform
-    for attempt in (0, 1):
-        try:
-            headerRows = __getMatrixNumHeaderLines(gzip.open(matrixFilename))
-            na_values = ["null", "NA", "NaN", "N/A", "na", "n/a"]
-            data = pd.io.parsers.read_table(gzip.open(matrixFilename),
-                                            skiprows=headerRows,
-                                            index_col=["ID_REF"],
-                                            na_values=na_values,
-                                            lineterminator='\n',
-                                            engine='c')
-            # Drop last line
-            data = data.drop(data.index[-1]).dropna()
-            break
-        except IOError as e:
-            # In case we have cirrupt file
-            logger.error("Failed loading %s: %s" % (matrixFilename, e))
-            os.remove(matrixFilename)
-            if attempt:
-                raise
-            matrixFilename = get_matrix_filename(series_id, platform_id)
-
-    data.index = data.index.astype(str)
-    data.index.name = "probe"
-    for column in data.columns:
-        data[column] = data[column].astype(np.float64)
-
-
-    return data
-
 
 @log_durations(logger.debug)
 def get_probes(platform_id):
