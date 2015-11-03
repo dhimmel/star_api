@@ -179,19 +179,6 @@ def get_analysis_df(case_query, control_query, modifier_query=""):
 
     return df.dropna(subset=["sample_class"])
 
-@log_durations(logger.debug)
-def load_gse(df, series_id):
-    gse_name = series_gse_name(series_id)
-    logger.debug('Loading data for %s, id = %d', gse_name, series_id)
-    gpl2data = {}
-    gpl2probes = {}
-
-    for platform_id in df.query("""series_id == %s""" % series_id).platform_id.unique():
-        gpl_name = platform_gpl_name(platform_id)
-        gpl2data[gpl_name] = get_data(series_id, platform_id)
-        gpl2probes[gpl_name] = get_probes(platform_id)
-    samples = df.query('series_id == %s' % series_id)
-    return Gse(gse_name, samples, gpl2data, gpl2probes)
 
 def query_record(id, table, id_field="id"):
     sql = """select * from %s where %s """ % (table, id_field) + """= %s"""
