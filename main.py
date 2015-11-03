@@ -1,6 +1,18 @@
-__author__ = 'dex'
+__author__ = 'dex', 'dhimmel'
+
+import sys
+import os
+import shutil
+import urllib2
+import StringIO
+import gzip
+
 from funcy import cat, first, re_all
-import conf, urllib2, os, shutil, gzip, psycopg2, psycopg2.extras, pandas as pd, numpy as np, re
+import psycopg2
+import psycopg2.extras
+import pandas as pd
+import numpy as np, re
+import conf
 
 ###connect to DB###
 import db_conf #PRIVATE
@@ -248,7 +260,7 @@ def is_logged(df):
 #         return data
 #     return translate_negative_cols(np.log2(data))
 
-def impute_data(data):
+def impute_data(data, suppress=True):
     import rpy2.robjects as robjects
     r = robjects.r
     import pandas.rpy.common as com
@@ -256,7 +268,12 @@ def impute_data(data):
     # data.to_csv("data.csv")
     r.library("impute")
     r_data = com.convert_to_r_matrix(data)
+    if suppress:
+        stdout = sys.stdout
+        sys.stdout = StringIO.StringIO()
     r_imputedData = r['impute.knn'](r_data)
+    if suppress:
+        sys.stdout = stdout
     npImputedData = np.asarray(r_imputedData[0])
     imputedData = pd.DataFrame(npImputedData)
     imputedData.index = data.index
