@@ -1,6 +1,9 @@
 # private server login details
 db_conf.py
 
+# raw GEO data -- large
+geo_mirror
+
 # Created by https://www.gitignore.io
 
 ### Linux ###
