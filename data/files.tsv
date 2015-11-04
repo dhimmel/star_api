@@ -1,9 +1,9 @@
 slim_id	slim_name	case_query	control_query	doid	log.txt	samples.tsv	meta.tsv
 DOID:0050156	idiopathic pulmonary fibrosis	IPF == 'IPF'	IPF_control == 'IPF_control'	DOID_0050156	True	True	True
 DOID:0050741	alcohol dependence	alcoholism == 'alcoholism'	alcoholism_control == 'alcoholism_control'	DOID_0050741	True	True	True
-DOID:0050742	nicotine dependence	Smoker == 'Smoker'	Nonsmoker == 'Nonsmoker'	DOID_0050742	True	False	False
+DOID:0050742	nicotine dependence	Smoker == 'Smoker'	Nonsmoker == 'Nonsmoker'	DOID_0050742	True	True	True
 DOID:1024	leprosy	borderline_leprosy == 'borderline_leprosy' or leprosy == 'leprosy'	leprosy_control == 'leprosy_control'	DOID_1024	True	True	False
-DOID:10283	prostate cancer	PC == 'PC' or PC_tissue_case == 'PC_tissue_case'	PC_control == 'PC_control' or PC_tissue_control == 'PC_tissue_control'	DOID_10283	True	False	False
+DOID:10283	prostate cancer	PC == 'PC' or PC_tissue_case == 'PC_tissue_case'	PC_control == 'PC_control' or PC_tissue_control == 'PC_tissue_control'	DOID_10283	True	True	True
 DOID:10534	stomach cancer	stomach_cancer_tissue == 'stomach_cancer_tissue'	stomach_cancer_tissue_control == 'stomach_cancer_tissue_control'	DOID_10534	True	True	False
 DOID:10608	celiac disease	celiac == 'celiac'	celiac_control == 'celiac_control'	DOID_10608	True	True	False
 DOID:10652	Alzheimer's disease	AD == 'AD'	AD_Control == 'AD_Control'	DOID_10652	True	True	True
@@ -23,9 +23,9 @@ DOID:13241	Behcet's disease	Behcet == 'Behcet'	Behcet_control == 'Behcet_control
 DOID:13378	Kawasaki disease	Kawasaki == 'Kawasaki'	Kawasaki_control == 'Kawasaki_control'	DOID_13378	True	True	False
 DOID:14221	metabolic syndrome X	MetS == 'MetS'	MetS_Control == 'MetS_Control'	DOID_14221	True	False	False
 DOID:14227	azoospermia	azoospermia == 'azoospermia'	azoospermia_control == 'azoospermia_control'	DOID_14227	True	True	True
-DOID:14330	Parkinson's disease	PD == 'PD'	PD_control == 'PD_control'	DOID_14330	True	False	False
-DOID:1595	endogenous depression	Depression == 'Depression' or MDD == 'MDD'	MDD_control == 'MDD_control' or Psychiatric_Control == 'Psychiatric_Control'	DOID_1595	True	True	True
-DOID:1612	breast cancer	breast_cancer == 'breast_cancer'	breast_cancer_control == 'breast_cancer_control' or breast_tissue_control == 'breast_tissue_control'	DOID_1612	True	True	True
+DOID:14330	Parkinson's disease	PD == 'PD'	PD_control == 'PD_control'	DOID_14330	True	True	True
+DOID:1595	endogenous depression	Depression == 'Depression' or MDD == 'MDD'	MDD_control == 'MDD_control' or Psychiatric_Control == 'Psychiatric_Control'	DOID_1595	True	False	False
+DOID:1612	breast cancer	breast_cancer == 'breast_cancer'	breast_cancer_control == 'breast_cancer_control' or breast_tissue_control == 'breast_tissue_control'	DOID_1612	True	False	False
 DOID:1686	glaucoma	glaucoma == 'glaucoma'	glaucoma_control == 'glaucoma_control'	DOID_1686	True	True	True
 DOID:1793	pancreatic cancer	pancreatic_cancer == 'pancreatic_cancer'	pancreatic_cancer_control == 'pancreatic_cancer_control'	DOID_1793	True	True	True
 DOID:1909	melanoma	melanoma == 'melanoma'	melanoma_control == 'melanoma_control'	DOID_1909	True	True	True
@@ -41,9 +41,9 @@ DOID:2998	testicular cancer	testicular_cancer == 'testicular_cancer'	testicular_
 DOID:3083	chronic obstructive pulmonary disease	COPD == 'COPD'	COPD_control == 'COPD_control'	DOID_3083	True	False	False
 DOID:3310	atopic dermatitis	eczema == 'eczema'	eczema_control == 'eczema_control'	DOID_3310	True	False	False
 DOID:3312	bipolar disorder	bipolar_disorder == 'bipolar_disorder'	bipolar_disorder_control == 'bipolar_disorder_control'	DOID_3312	True	True	True
-DOID:332	amyotrophic lateral sclerosis	ALS == 'ALS'	ALS_control == 'ALS_control'	DOID_332	True	True	True
+DOID:332	amyotrophic lateral sclerosis	ALS == 'ALS'	ALS_control == 'ALS_control'	DOID_332	True	False	False
 DOID:3393	coronary artery disease	CAD == 'CAD'	CAD_control == 'CAD_control'	DOID_3393	True	True	True
-DOID:418	systemic scleroderma	systemic_scleroderma == 'systemic_scleroderma'	systemic_scleroderma_control == 'systemic_scleroderma_control'	DOID_418	True	True	True
+DOID:418	systemic scleroderma	systemic_scleroderma == 'systemic_scleroderma'	systemic_scleroderma_control == 'systemic_scleroderma_control'	DOID_418	True	False	False
 DOID:4481	allergic rhinitis	allergic_rhinitis == 'allergic_rhinitis'	allergic_rhinitis_control == 'allergic_rhinitis_control'	DOID_4481	True	True	True
 DOID:4606	bile duct cancer	bile_duct_cancer == 'bile_duct_cancer'	bile_duct_cancer_control == 'bile_duct_cancer_control'	DOID_4606	True	False	False
 DOID:5419	schizophrenia	schizophrenia == 'schizophrenia'	Psychiatric_Control == 'Psychiatric_Control' or schizophrenia_Control == 'schizophrenia_Control'	DOID_5419	True	True	True
@@ -53,7 +53,7 @@ DOID:7148	rheumatoid arthritis	RA == 'RA'	RA_control == 'RA_control'	DOID_7148	T
 DOID:7693	abdominal aortic aneurysm	AAA == 'AAA'	AAA_control == 'AAA_control'	DOID_7693	True	True	True
 DOID:784	chronic kidney failure	CKD == 'CKD'	CKD_Control == 'CKD_Control'	DOID_784	True	True	False
 DOID:824	periodontitis	periodontitis == 'periodontitis'	periodontitis_control == 'periodontitis_control'	DOID_824	True	True	True
-DOID:8577	ulcerative colitis	UC == 'UC'	UC_control == 'UC_control'	DOID_8577	True	False	False
+DOID:8577	ulcerative colitis	UC == 'UC'	UC_control == 'UC_control'	DOID_8577	True	True	True
 DOID:8778	Crohn's disease	CD == 'CD'	CD_control == 'CD_control'	DOID_8778	True	True	True
 DOID:8893	psoriasis	psoriasis == 'psoriasis'	psoriasis_control == 'psoriasis_control'	DOID_8893	True	False	False
 DOID:8986	narcolepsy	narcolepsy == 'narcolepsy'	narcolepsy_control == 'narcolepsy_control'	DOID_8986	True	True	False
@@ -61,7 +61,7 @@ DOID:9008	psoriatic arthritis	PsA == 'PsA'	PsA_control == 'PsA_control'	DOID_900
 DOID:9074	systemic lupus erythematosus	SLE == 'SLE'	SLE_control == 'SLE_control'	DOID_9074	True	False	False
 DOID:9206	Barrett's esophagus	BE_Tissue == 'BE_Tissue'	EAC_Non_Tumor == 'EAC_Non_Tumor'	DOID_9206	True	True	True
 DOID:9296	cleft lip	cleft_lip == 'cleft_lip'	cleft_lip_control == 'cleft_lip_control'	DOID_9296	True	True	False
-DOID:9352	type 2 diabetes mellitus	T2D == 'T2D'	T2D_control == 'T2D_control'	DOID_9352	True	True	True
-DOID:9744	type 1 diabetes mellitus	T1D == 'T1D'	T1D_control == 'T1D_control'	DOID_9744	True	True	True
+DOID:9352	type 2 diabetes mellitus	T2D == 'T2D'	T2D_control == 'T2D_control'	DOID_9352	True	False	False
+DOID:9744	type 1 diabetes mellitus	T1D == 'T1D'	T1D_control == 'T1D_control'	DOID_9744	True	False	False
 DOID:986	alopecia areata	alopecia_areata == 'alopecia_areata'	alopecia_areata_control == 'alopecia_areata_control'	DOID_986	True	True	True
 DOID:9970	obesity	obesity == 'obesity'	obesity_control == 'obesity_control'	DOID_9970	True	False	False
