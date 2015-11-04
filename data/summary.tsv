@@ -1,0 +1,35 @@
+doid	slim_id	slim_name	down	up
+DOID_0050156	DOID:0050156	idiopathic pulmonary fibrosis	592	977
+DOID_0050741	DOID:0050741	alcohol dependence	210	199
+DOID_0050742	DOID:0050742	nicotine dependence	4734	3072
+DOID_10283	DOID:10283	prostate cancer	1496	1489
+DOID_10652	DOID:10652	Alzheimer's disease	1580	1612
+DOID_11612	DOID:11612	polycystic ovary syndrome	285	255
+DOID_12365	DOID:12365	malaria	324	382
+DOID_1324	DOID:1324	lung cancer	99	321
+DOID_14227	DOID:14227	azoospermia	3319	2462
+DOID_14330	DOID:14330	Parkinson's disease	564	387
+DOID_1686	DOID:1686	glaucoma	101	301
+DOID_1793	DOID:1793	pancreatic cancer	990	904
+DOID_1909	DOID:1909	melanoma	1245	1106
+DOID_1936	DOID:1936	atherosclerosis	6	14
+DOID_219	DOID:219	colon cancer	1431	2205
+DOID_2377	DOID:2377	multiple sclerosis	9	2
+DOID_2394	DOID:2394	ovarian cancer	76	64
+DOID_2531	DOID:2531	hematologic cancer	145	127
+DOID_263	DOID:263	kidney cancer	4948	5465
+DOID_2841	DOID:2841	asthma	1	1
+DOID_2986	DOID:2986	IgA glomerulonephritis	2300	2445
+DOID_3312	DOID:3312	bipolar disorder	177	117
+DOID_3393	DOID:3393	coronary artery disease	46	38
+DOID_4481	DOID:4481	allergic rhinitis	9	15
+DOID_5419	DOID:5419	schizophrenia	506	413
+DOID_635	DOID:635	acquired immunodeficiency syndrome	1271	1380
+DOID_7147	DOID:7147	ankylosing spondylitis	79	93
+DOID_7693	DOID:7693	abdominal aortic aneurysm	157	238
+DOID_824	DOID:824	periodontitis	38	16
+DOID_8577	DOID:8577	ulcerative colitis	2892	2947
+DOID_8778	DOID:8778	Crohn's disease	469	921
+DOID_9008	DOID:9008	psoriatic arthritis	234	247
+DOID_9206	DOID:9206	Barrett's esophagus	2716	2529
+DOID_986	DOID:986	alopecia areata	1813	1230

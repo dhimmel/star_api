@@ -1,0 +1,343 @@
+doid_0	disease_0	doid_1	disease_1	similarity
+DOID_986	alopecia areata	DOID_14227	azoospermia	0.12448518666135247
+DOID_986	alopecia areata	DOID_263	kidney cancer	0.11654303333631245
+DOID_986	alopecia areata	DOID_0050742	nicotine dependence	0.10858392564242755
+DOID_986	alopecia areata	DOID_9206	Barrett's esophagus	0.10042613636363637
+DOID_986	alopecia areata	DOID_8577	ulcerative colitis	0.09482412732379296
+DOID_986	alopecia areata	DOID_2986	IgA glomerulonephritis	0.07939564508961636
+DOID_986	alopecia areata	DOID_10652	Alzheimer's disease	0.06386040654794027
+DOID_986	alopecia areata	DOID_1909	melanoma	0.05206611570247934
+DOID_986	alopecia areata	DOID_10283	prostate cancer	0.05104539461292146
+DOID_986	alopecia areata	DOID_219	colon cancer	0.049880013712718545
+DOID_986	alopecia areata	DOID_1793	pancreatic cancer	0.04679144385026738
+DOID_986	alopecia areata	DOID_635	acquired immunodeficiency syndrome	0.044193420531113754
+DOID_986	alopecia areata	DOID_8778	Crohn's disease	0.043627450980392155
+DOID_986	alopecia areata	DOID_5419	schizophrenia	0.03922091782283885
+DOID_986	alopecia areata	DOID_14330	Parkinson's disease	0.030102983892263006
+DOID_986	alopecia areata	DOID_0050156	idiopathic pulmonary fibrosis	0.02922609305588029
+DOID_986	alopecia areata	DOID_12365	malaria	0.024567280848687884
+DOID_986	alopecia areata	DOID_11612	polycystic ovary syndrome	0.018459763484280356
+DOID_9206	Barrett's esophagus	DOID_263	kidney cancer	0.16354417325541423
+DOID_9206	Barrett's esophagus	DOID_2986	IgA glomerulonephritis	0.15832482124616956
+DOID_9206	Barrett's esophagus	DOID_0050742	nicotine dependence	0.15780565511748307
+DOID_9206	Barrett's esophagus	DOID_8577	ulcerative colitis	0.13365071992568509
+DOID_9206	Barrett's esophagus	DOID_1909	melanoma	0.11549730146491904
+DOID_9206	Barrett's esophagus	DOID_14227	azoospermia	0.11348868474120546
+DOID_9206	Barrett's esophagus	DOID_10283	prostate cancer	0.10703452260580673
+DOID_9206	Barrett's esophagus	DOID_219	colon cancer	0.10129761406446212
+DOID_9206	Barrett's esophagus	DOID_986	alopecia areata	0.10042613636363637
+DOID_9206	Barrett's esophagus	DOID_10652	Alzheimer's disease	0.09578490407505952
+DOID_9206	Barrett's esophagus	DOID_1793	pancreatic cancer	0.07650793650793651
+DOID_9206	Barrett's esophagus	DOID_635	acquired immunodeficiency syndrome	0.07330607476635514
+DOID_9206	Barrett's esophagus	DOID_8778	Crohn's disease	0.06077809317081316
+DOID_9206	Barrett's esophagus	DOID_0050156	idiopathic pulmonary fibrosis	0.050691985838429356
+DOID_9206	Barrett's esophagus	DOID_14330	Parkinson's disease	0.048167539267015703
+DOID_9206	Barrett's esophagus	DOID_5419	schizophrenia	0.025521641662355578
+DOID_9206	Barrett's esophagus	DOID_12365	malaria	0.02094701637035733
+DOID_9206	Barrett's esophagus	DOID_11612	polycystic ovary syndrome	0.02038991235914863
+DOID_8778	Crohn's disease	DOID_8577	ulcerative colitis	0.1903114186851211
+DOID_8778	Crohn's disease	DOID_263	kidney cancer	0.07351563963289005
+DOID_8778	Crohn's disease	DOID_0050156	idiopathic pulmonary fibrosis	0.06598614655486694
+DOID_8778	Crohn's disease	DOID_219	colon cancer	0.06430588746469694
+DOID_8778	Crohn's disease	DOID_9206	Barrett's esophagus	0.06077809317081316
+DOID_8778	Crohn's disease	DOID_1793	pancreatic cancer	0.05828119855120185
+DOID_8778	Crohn's disease	DOID_635	acquired immunodeficiency syndrome	0.05728051391862955
+DOID_8778	Crohn's disease	DOID_2986	IgA glomerulonephritis	0.05699481865284974
+DOID_8778	Crohn's disease	DOID_0050742	nicotine dependence	0.056931872320152455
+DOID_8778	Crohn's disease	DOID_1909	melanoma	0.04619799139167862
+DOID_8778	Crohn's disease	DOID_12365	malaria	0.04613841524573721
+DOID_8778	Crohn's disease	DOID_986	alopecia areata	0.043627450980392155
+DOID_8778	Crohn's disease	DOID_10283	prostate cancer	0.039463886820551006
+DOID_8778	Crohn's disease	DOID_14227	azoospermia	0.03761426644687547
+DOID_8778	Crohn's disease	DOID_10652	Alzheimer's disease	0.03536528617961843
+DOID_8778	Crohn's disease	DOID_5419	schizophrenia	0.03071364046973803
+DOID_8778	Crohn's disease	DOID_14330	Parkinson's disease	0.02702702702702703
+DOID_8778	Crohn's disease	DOID_11612	polycystic ovary syndrome	0.014814814814814815
+DOID_8577	ulcerative colitis	DOID_263	kidney cancer	0.27998968096998883
+DOID_8577	ulcerative colitis	DOID_8778	Crohn's disease	0.1903114186851211
+DOID_8577	ulcerative colitis	DOID_0050742	nicotine dependence	0.18534233365477337
+DOID_8577	ulcerative colitis	DOID_219	colon cancer	0.16167050986420703
+DOID_8577	ulcerative colitis	DOID_9206	Barrett's esophagus	0.13365071992568509
+DOID_8577	ulcerative colitis	DOID_2986	IgA glomerulonephritis	0.12771707202443897
+DOID_8577	ulcerative colitis	DOID_14227	azoospermia	0.1164757520608072
+DOID_8577	ulcerative colitis	DOID_635	acquired immunodeficiency syndrome	0.11516235553109522
+DOID_8577	ulcerative colitis	DOID_1909	melanoma	0.10613107822410148
+DOID_8577	ulcerative colitis	DOID_986	alopecia areata	0.09482412732379296
+DOID_8577	ulcerative colitis	DOID_10652	Alzheimer's disease	0.08549422336328627
+DOID_8577	ulcerative colitis	DOID_10283	prostate cancer	0.0839602364320258
+DOID_8577	ulcerative colitis	DOID_1793	pancreatic cancer	0.08225360314456252
+DOID_8577	ulcerative colitis	DOID_0050156	idiopathic pulmonary fibrosis	0.07880884343510303
+DOID_8577	ulcerative colitis	DOID_14330	Parkinson's disease	0.03495845743846998
+DOID_8577	ulcerative colitis	DOID_12365	malaria	0.03467094703049759
+DOID_8577	ulcerative colitis	DOID_5419	schizophrenia	0.028405524168236034
+DOID_8577	ulcerative colitis	DOID_11612	polycystic ovary syndrome	0.02023963730569948
+DOID_635	acquired immunodeficiency syndrome	DOID_8577	ulcerative colitis	0.11516235553109522
+DOID_635	acquired immunodeficiency syndrome	DOID_263	kidney cancer	0.08876648004334477
+DOID_635	acquired immunodeficiency syndrome	DOID_0050742	nicotine dependence	0.08679161088799643
+DOID_635	acquired immunodeficiency syndrome	DOID_10283	prostate cancer	0.08075772681954138
+DOID_635	acquired immunodeficiency syndrome	DOID_219	colon cancer	0.07905636592832703
+DOID_635	acquired immunodeficiency syndrome	DOID_2986	IgA glomerulonephritis	0.07591062136516682
+DOID_635	acquired immunodeficiency syndrome	DOID_9206	Barrett's esophagus	0.07330607476635514
+DOID_635	acquired immunodeficiency syndrome	DOID_1909	melanoma	0.06751985878199471
+DOID_635	acquired immunodeficiency syndrome	DOID_14227	azoospermia	0.05786593707250342
+DOID_635	acquired immunodeficiency syndrome	DOID_8778	Crohn's disease	0.05728051391862955
+DOID_635	acquired immunodeficiency syndrome	DOID_1793	pancreatic cancer	0.05472875660105617
+DOID_635	acquired immunodeficiency syndrome	DOID_0050156	idiopathic pulmonary fibrosis	0.049429657794676805
+DOID_635	acquired immunodeficiency syndrome	DOID_986	alopecia areata	0.044193420531113754
+DOID_635	acquired immunodeficiency syndrome	DOID_10652	Alzheimer's disease	0.043552357508047715
+DOID_635	acquired immunodeficiency syndrome	DOID_12365	malaria	0.03912363067292645
+DOID_635	acquired immunodeficiency syndrome	DOID_14330	Parkinson's disease	0.020353982300884955
+DOID_635	acquired immunodeficiency syndrome	DOID_5419	schizophrenia	0.012744516893894487
+DOID_635	acquired immunodeficiency syndrome	DOID_11612	polycystic ovary syndrome	0.011627906976744186
+DOID_5419	schizophrenia	DOID_14227	azoospermia	0.04351954423168223
+DOID_5419	schizophrenia	DOID_10652	Alzheimer's disease	0.041036163118748394
+DOID_5419	schizophrenia	DOID_986	alopecia areata	0.03922091782283885
+DOID_5419	schizophrenia	DOID_0050742	nicotine dependence	0.037267080745341616
+DOID_5419	schizophrenia	DOID_263	kidney cancer	0.03713103966911074
+DOID_5419	schizophrenia	DOID_14330	Parkinson's disease	0.035038932146829814
+DOID_5419	schizophrenia	DOID_8778	Crohn's disease	0.03071364046973803
+DOID_5419	schizophrenia	DOID_8577	ulcerative colitis	0.028405524168236034
+DOID_5419	schizophrenia	DOID_9206	Barrett's esophagus	0.025521641662355578
+DOID_5419	schizophrenia	DOID_2986	IgA glomerulonephritis	0.024990675121223424
+DOID_5419	schizophrenia	DOID_10283	prostate cancer	0.023906547133931
+DOID_5419	schizophrenia	DOID_1793	pancreatic cancer	0.02185185185185185
+DOID_5419	schizophrenia	DOID_219	colon cancer	0.021550714453033498
+DOID_5419	schizophrenia	DOID_12365	malaria	0.019083969465648856
+DOID_5419	schizophrenia	DOID_0050156	idiopathic pulmonary fibrosis	0.017954070981210855
+DOID_5419	schizophrenia	DOID_1909	melanoma	0.015097976228718278
+DOID_5419	schizophrenia	DOID_635	acquired immunodeficiency syndrome	0.012744516893894487
+DOID_5419	schizophrenia	DOID_11612	polycystic ovary syndrome	0.011863224005582694
+DOID_2986	IgA glomerulonephritis	DOID_263	kidney cancer	0.20039716801934035
+DOID_2986	IgA glomerulonephritis	DOID_9206	Barrett's esophagus	0.15832482124616956
+DOID_2986	IgA glomerulonephritis	DOID_219	colon cancer	0.13333333333333333
+DOID_2986	IgA glomerulonephritis	DOID_0050742	nicotine dependence	0.13085702843412095
+DOID_2986	IgA glomerulonephritis	DOID_8577	ulcerative colitis	0.12771707202443897
+DOID_2986	IgA glomerulonephritis	DOID_14227	azoospermia	0.11403609610300035
+DOID_2986	IgA glomerulonephritis	DOID_10652	Alzheimer's disease	0.10318642048838594
+DOID_2986	IgA glomerulonephritis	DOID_10283	prostate cancer	0.0911954402279886
+DOID_2986	IgA glomerulonephritis	DOID_986	alopecia areata	0.07939564508961636
+DOID_2986	IgA glomerulonephritis	DOID_635	acquired immunodeficiency syndrome	0.07591062136516682
+DOID_2986	IgA glomerulonephritis	DOID_1909	melanoma	0.07435121795892374
+DOID_2986	IgA glomerulonephritis	DOID_1793	pancreatic cancer	0.07306783665204185
+DOID_2986	IgA glomerulonephritis	DOID_0050156	idiopathic pulmonary fibrosis	0.05916030534351145
+DOID_2986	IgA glomerulonephritis	DOID_8778	Crohn's disease	0.05699481865284974
+DOID_2986	IgA glomerulonephritis	DOID_14330	Parkinson's disease	0.03374578177727784
+DOID_2986	IgA glomerulonephritis	DOID_5419	schizophrenia	0.024990675121223424
+DOID_2986	IgA glomerulonephritis	DOID_12365	malaria	0.02205177372962608
+DOID_2986	IgA glomerulonephritis	DOID_11612	polycystic ovary syndrome	0.01776302947491704
+DOID_263	kidney cancer	DOID_8577	ulcerative colitis	0.27998968096998883
+DOID_263	kidney cancer	DOID_0050742	nicotine dependence	0.23339476003525358
+DOID_263	kidney cancer	DOID_2986	IgA glomerulonephritis	0.20039716801934035
+DOID_263	kidney cancer	DOID_14227	azoospermia	0.19745117510758028
+DOID_263	kidney cancer	DOID_9206	Barrett's esophagus	0.16354417325541423
+DOID_263	kidney cancer	DOID_219	colon cancer	0.15875133404482392
+DOID_263	kidney cancer	DOID_10652	Alzheimer's disease	0.11897390535161433
+DOID_263	kidney cancer	DOID_986	alopecia areata	0.11654303333631245
+DOID_263	kidney cancer	DOID_1909	melanoma	0.10555050045495905
+DOID_263	kidney cancer	DOID_10283	prostate cancer	0.09926338483650736
+DOID_263	kidney cancer	DOID_1793	pancreatic cancer	0.08992176714219972
+DOID_263	kidney cancer	DOID_635	acquired immunodeficiency syndrome	0.08876648004334477
+DOID_263	kidney cancer	DOID_8778	Crohn's disease	0.07351563963289005
+DOID_263	kidney cancer	DOID_0050156	idiopathic pulmonary fibrosis	0.06158848118903855
+DOID_263	kidney cancer	DOID_14330	Parkinson's disease	0.03963098936270357
+DOID_263	kidney cancer	DOID_5419	schizophrenia	0.03713103966911074
+DOID_263	kidney cancer	DOID_12365	malaria	0.026430054747970548
+DOID_263	kidney cancer	DOID_11612	polycystic ovary syndrome	0.02214441184820668
+DOID_219	colon cancer	DOID_8577	ulcerative colitis	0.16167050986420703
+DOID_219	colon cancer	DOID_263	kidney cancer	0.15875133404482392
+DOID_219	colon cancer	DOID_2986	IgA glomerulonephritis	0.13333333333333333
+DOID_219	colon cancer	DOID_1909	melanoma	0.1084590414359366
+DOID_219	colon cancer	DOID_9206	Barrett's esophagus	0.10129761406446212
+DOID_219	colon cancer	DOID_0050742	nicotine dependence	0.09899615548910722
+DOID_219	colon cancer	DOID_10283	prostate cancer	0.09830976198689204
+DOID_219	colon cancer	DOID_10652	Alzheimer's disease	0.08151059466848941
+DOID_219	colon cancer	DOID_635	acquired immunodeficiency syndrome	0.07905636592832703
+DOID_219	colon cancer	DOID_14227	azoospermia	0.07802406586447118
+DOID_219	colon cancer	DOID_1793	pancreatic cancer	0.06718812675491376
+DOID_219	colon cancer	DOID_8778	Crohn's disease	0.06430588746469694
+DOID_219	colon cancer	DOID_986	alopecia areata	0.049880013712718545
+DOID_219	colon cancer	DOID_0050156	idiopathic pulmonary fibrosis	0.04808492922564529
+DOID_219	colon cancer	DOID_14330	Parkinson's disease	0.03525264394829612
+DOID_219	colon cancer	DOID_12365	malaria	0.022875030098723815
+DOID_219	colon cancer	DOID_5419	schizophrenia	0.021550714453033498
+DOID_219	colon cancer	DOID_11612	polycystic ovary syndrome	0.011330049261083743
+DOID_1909	melanoma	DOID_9206	Barrett's esophagus	0.11549730146491904
+DOID_1909	melanoma	DOID_219	colon cancer	0.1084590414359366
+DOID_1909	melanoma	DOID_8577	ulcerative colitis	0.10613107822410148
+DOID_1909	melanoma	DOID_263	kidney cancer	0.10555050045495905
+DOID_1909	melanoma	DOID_0050742	nicotine dependence	0.0806159420289855
+DOID_1909	melanoma	DOID_10283	prostate cancer	0.07893626002532714
+DOID_1909	melanoma	DOID_2986	IgA glomerulonephritis	0.07435121795892374
+DOID_1909	melanoma	DOID_635	acquired immunodeficiency syndrome	0.06751985878199471
+DOID_1909	melanoma	DOID_14227	azoospermia	0.05577966337460008
+DOID_1909	melanoma	DOID_986	alopecia areata	0.05206611570247934
+DOID_1909	melanoma	DOID_10652	Alzheimer's disease	0.04997013736810671
+DOID_1909	melanoma	DOID_8778	Crohn's disease	0.04619799139167862
+DOID_1909	melanoma	DOID_1793	pancreatic cancer	0.042416452442159386
+DOID_1909	melanoma	DOID_0050156	idiopathic pulmonary fibrosis	0.03466299862448418
+DOID_1909	melanoma	DOID_14330	Parkinson's disease	0.027269810715431504
+DOID_1909	melanoma	DOID_12365	malaria	0.021717000339328132
+DOID_1909	melanoma	DOID_5419	schizophrenia	0.015097976228718278
+DOID_1909	melanoma	DOID_11612	polycystic ovary syndrome	0.013537584609903812
+DOID_1793	pancreatic cancer	DOID_263	kidney cancer	0.08992176714219972
+DOID_1793	pancreatic cancer	DOID_8577	ulcerative colitis	0.08225360314456252
+DOID_1793	pancreatic cancer	DOID_9206	Barrett's esophagus	0.07650793650793651
+DOID_1793	pancreatic cancer	DOID_0050742	nicotine dependence	0.0744853111265325
+DOID_1793	pancreatic cancer	DOID_2986	IgA glomerulonephritis	0.07306783665204185
+DOID_1793	pancreatic cancer	DOID_219	colon cancer	0.06718812675491376
+DOID_1793	pancreatic cancer	DOID_14227	azoospermia	0.06246376811594203
+DOID_1793	pancreatic cancer	DOID_8778	Crohn's disease	0.05828119855120185
+DOID_1793	pancreatic cancer	DOID_635	acquired immunodeficiency syndrome	0.05472875660105617
+DOID_1793	pancreatic cancer	DOID_0050156	idiopathic pulmonary fibrosis	0.054003724394785846
+DOID_1793	pancreatic cancer	DOID_10283	prostate cancer	0.052144469525959365
+DOID_1793	pancreatic cancer	DOID_10652	Alzheimer's disease	0.04885854491145722
+DOID_1793	pancreatic cancer	DOID_986	alopecia areata	0.04679144385026738
+DOID_1793	pancreatic cancer	DOID_1909	melanoma	0.042416452442159386
+DOID_1793	pancreatic cancer	DOID_12365	malaria	0.038306451612903226
+DOID_1793	pancreatic cancer	DOID_14330	Parkinson's disease	0.02728613569321534
+DOID_1793	pancreatic cancer	DOID_5419	schizophrenia	0.02185185185185185
+DOID_1793	pancreatic cancer	DOID_11612	polycystic ovary syndrome	0.015533165407220823
+DOID_14330	Parkinson's disease	DOID_9206	Barrett's esophagus	0.048167539267015703
+DOID_14330	Parkinson's disease	DOID_10652	Alzheimer's disease	0.04548919949174079
+DOID_14330	Parkinson's disease	DOID_263	kidney cancer	0.03963098936270357
+DOID_14330	Parkinson's disease	DOID_219	colon cancer	0.03525264394829612
+DOID_14330	Parkinson's disease	DOID_5419	schizophrenia	0.035038932146829814
+DOID_14330	Parkinson's disease	DOID_8577	ulcerative colitis	0.03495845743846998
+DOID_14330	Parkinson's disease	DOID_2986	IgA glomerulonephritis	0.03374578177727784
+DOID_14330	Parkinson's disease	DOID_0050742	nicotine dependence	0.03323593864134405
+DOID_14330	Parkinson's disease	DOID_986	alopecia areata	0.030102983892263006
+DOID_14330	Parkinson's disease	DOID_1793	pancreatic cancer	0.02728613569321534
+DOID_14330	Parkinson's disease	DOID_1909	melanoma	0.027269810715431504
+DOID_14330	Parkinson's disease	DOID_8778	Crohn's disease	0.02702702702702703
+DOID_14330	Parkinson's disease	DOID_10283	prostate cancer	0.023662274805055124
+DOID_14330	Parkinson's disease	DOID_14227	azoospermia	0.022092472778917467
+DOID_14330	Parkinson's disease	DOID_0050156	idiopathic pulmonary fibrosis	0.02154993783671778
+DOID_14330	Parkinson's disease	DOID_635	acquired immunodeficiency syndrome	0.020353982300884955
+DOID_14330	Parkinson's disease	DOID_12365	malaria	0.018034825870646767
+DOID_14330	Parkinson's disease	DOID_11612	polycystic ovary syndrome	0.015785861358956762
+DOID_14227	azoospermia	DOID_263	kidney cancer	0.19745117510758028
+DOID_14227	azoospermia	DOID_0050742	nicotine dependence	0.17606510292005745
+DOID_14227	azoospermia	DOID_986	alopecia areata	0.12448518666135247
+DOID_14227	azoospermia	DOID_8577	ulcerative colitis	0.1164757520608072
+DOID_14227	azoospermia	DOID_2986	IgA glomerulonephritis	0.11403609610300035
+DOID_14227	azoospermia	DOID_9206	Barrett's esophagus	0.11348868474120546
+DOID_14227	azoospermia	DOID_10652	Alzheimer's disease	0.0884990253411306
+DOID_14227	azoospermia	DOID_219	colon cancer	0.07802406586447118
+DOID_14227	azoospermia	DOID_1793	pancreatic cancer	0.06246376811594203
+DOID_14227	azoospermia	DOID_635	acquired immunodeficiency syndrome	0.05786593707250342
+DOID_14227	azoospermia	DOID_1909	melanoma	0.05577966337460008
+DOID_14227	azoospermia	DOID_10283	prostate cancer	0.05468135326514555
+DOID_14227	azoospermia	DOID_5419	schizophrenia	0.04351954423168223
+DOID_14227	azoospermia	DOID_8778	Crohn's disease	0.03761426644687547
+DOID_14227	azoospermia	DOID_0050156	idiopathic pulmonary fibrosis	0.035998819710829154
+DOID_14227	azoospermia	DOID_14330	Parkinson's disease	0.022092472778917467
+DOID_14227	azoospermia	DOID_12365	malaria	0.017360552965761132
+DOID_14227	azoospermia	DOID_11612	polycystic ovary syndrome	0.0168686537831641
+DOID_12365	malaria	DOID_8778	Crohn's disease	0.04613841524573721
+DOID_12365	malaria	DOID_635	acquired immunodeficiency syndrome	0.03912363067292645
+DOID_12365	malaria	DOID_1793	pancreatic cancer	0.038306451612903226
+DOID_12365	malaria	DOID_8577	ulcerative colitis	0.03467094703049759
+DOID_12365	malaria	DOID_0050156	idiopathic pulmonary fibrosis	0.030937215650591446
+DOID_12365	malaria	DOID_0050742	nicotine dependence	0.027842799063693482
+DOID_12365	malaria	DOID_263	kidney cancer	0.026430054747970548
+DOID_12365	malaria	DOID_10652	Alzheimer's disease	0.025504782146652496
+DOID_12365	malaria	DOID_10283	prostate cancer	0.02503556187766714
+DOID_12365	malaria	DOID_986	alopecia areata	0.024567280848687884
+DOID_12365	malaria	DOID_219	colon cancer	0.022875030098723815
+DOID_12365	malaria	DOID_2986	IgA glomerulonephritis	0.02205177372962608
+DOID_12365	malaria	DOID_1909	melanoma	0.021717000339328132
+DOID_12365	malaria	DOID_9206	Barrett's esophagus	0.02094701637035733
+DOID_12365	malaria	DOID_5419	schizophrenia	0.019083969465648856
+DOID_12365	malaria	DOID_11612	polycystic ovary syndrome	0.018961253091508656
+DOID_12365	malaria	DOID_14330	Parkinson's disease	0.018034825870646767
+DOID_12365	malaria	DOID_14227	azoospermia	0.017360552965761132
+DOID_11612	polycystic ovary syndrome	DOID_263	kidney cancer	0.02214441184820668
+DOID_11612	polycystic ovary syndrome	DOID_9206	Barrett's esophagus	0.02038991235914863
+DOID_11612	polycystic ovary syndrome	DOID_8577	ulcerative colitis	0.02023963730569948
+DOID_11612	polycystic ovary syndrome	DOID_12365	malaria	0.018961253091508656
+DOID_11612	polycystic ovary syndrome	DOID_0050742	nicotine dependence	0.018729843711237905
+DOID_11612	polycystic ovary syndrome	DOID_986	alopecia areata	0.018459763484280356
+DOID_11612	polycystic ovary syndrome	DOID_2986	IgA glomerulonephritis	0.01776302947491704
+DOID_11612	polycystic ovary syndrome	DOID_14227	azoospermia	0.0168686537831641
+DOID_11612	polycystic ovary syndrome	DOID_10652	Alzheimer's disease	0.016864805087088746
+DOID_11612	polycystic ovary syndrome	DOID_14330	Parkinson's disease	0.015785861358956762
+DOID_11612	polycystic ovary syndrome	DOID_10283	prostate cancer	0.015556207807455239
+DOID_11612	polycystic ovary syndrome	DOID_1793	pancreatic cancer	0.015533165407220823
+DOID_11612	polycystic ovary syndrome	DOID_8778	Crohn's disease	0.014814814814814815
+DOID_11612	polycystic ovary syndrome	DOID_0050156	idiopathic pulmonary fibrosis	0.014132553606237816
+DOID_11612	polycystic ovary syndrome	DOID_1909	melanoma	0.013537584609903812
+DOID_11612	polycystic ovary syndrome	DOID_5419	schizophrenia	0.011863224005582694
+DOID_11612	polycystic ovary syndrome	DOID_635	acquired immunodeficiency syndrome	0.011627906976744186
+DOID_11612	polycystic ovary syndrome	DOID_219	colon cancer	0.011330049261083743
+DOID_10652	Alzheimer's disease	DOID_263	kidney cancer	0.11897390535161433
+DOID_10652	Alzheimer's disease	DOID_2986	IgA glomerulonephritis	0.10318642048838594
+DOID_10652	Alzheimer's disease	DOID_9206	Barrett's esophagus	0.09578490407505952
+DOID_10652	Alzheimer's disease	DOID_0050742	nicotine dependence	0.08929913062144468
+DOID_10652	Alzheimer's disease	DOID_14227	azoospermia	0.0884990253411306
+DOID_10652	Alzheimer's disease	DOID_8577	ulcerative colitis	0.08549422336328627
+DOID_10652	Alzheimer's disease	DOID_219	colon cancer	0.08151059466848941
+DOID_10652	Alzheimer's disease	DOID_986	alopecia areata	0.06386040654794027
+DOID_10652	Alzheimer's disease	DOID_10283	prostate cancer	0.05136060551450712
+DOID_10652	Alzheimer's disease	DOID_1909	melanoma	0.04997013736810671
+DOID_10652	Alzheimer's disease	DOID_1793	pancreatic cancer	0.04885854491145722
+DOID_10652	Alzheimer's disease	DOID_14330	Parkinson's disease	0.04548919949174079
+DOID_10652	Alzheimer's disease	DOID_635	acquired immunodeficiency syndrome	0.043552357508047715
+DOID_10652	Alzheimer's disease	DOID_5419	schizophrenia	0.041036163118748394
+DOID_10652	Alzheimer's disease	DOID_0050156	idiopathic pulmonary fibrosis	0.039193475305845035
+DOID_10652	Alzheimer's disease	DOID_8778	Crohn's disease	0.03536528617961843
+DOID_10652	Alzheimer's disease	DOID_12365	malaria	0.025504782146652496
+DOID_10652	Alzheimer's disease	DOID_11612	polycystic ovary syndrome	0.016864805087088746
+DOID_10283	prostate cancer	DOID_9206	Barrett's esophagus	0.10703452260580673
+DOID_10283	prostate cancer	DOID_263	kidney cancer	0.09926338483650736
+DOID_10283	prostate cancer	DOID_219	colon cancer	0.09830976198689204
+DOID_10283	prostate cancer	DOID_0050742	nicotine dependence	0.09797446059004844
+DOID_10283	prostate cancer	DOID_2986	IgA glomerulonephritis	0.0911954402279886
+DOID_10283	prostate cancer	DOID_8577	ulcerative colitis	0.0839602364320258
+DOID_10283	prostate cancer	DOID_635	acquired immunodeficiency syndrome	0.08075772681954138
+DOID_10283	prostate cancer	DOID_1909	melanoma	0.07893626002532714
+DOID_10283	prostate cancer	DOID_14227	azoospermia	0.05468135326514555
+DOID_10283	prostate cancer	DOID_1793	pancreatic cancer	0.052144469525959365
+DOID_10283	prostate cancer	DOID_10652	Alzheimer's disease	0.05136060551450712
+DOID_10283	prostate cancer	DOID_986	alopecia areata	0.05104539461292146
+DOID_10283	prostate cancer	DOID_0050156	idiopathic pulmonary fibrosis	0.04005756776205325
+DOID_10283	prostate cancer	DOID_8778	Crohn's disease	0.039463886820551006
+DOID_10283	prostate cancer	DOID_12365	malaria	0.02503556187766714
+DOID_10283	prostate cancer	DOID_5419	schizophrenia	0.023906547133931
+DOID_10283	prostate cancer	DOID_14330	Parkinson's disease	0.023662274805055124
+DOID_10283	prostate cancer	DOID_11612	polycystic ovary syndrome	0.015556207807455239
+DOID_0050742	nicotine dependence	DOID_263	kidney cancer	0.23339476003525358
+DOID_0050742	nicotine dependence	DOID_8577	ulcerative colitis	0.18534233365477337
+DOID_0050742	nicotine dependence	DOID_14227	azoospermia	0.17606510292005745
+DOID_0050742	nicotine dependence	DOID_9206	Barrett's esophagus	0.15780565511748307
+DOID_0050742	nicotine dependence	DOID_2986	IgA glomerulonephritis	0.13085702843412095
+DOID_0050742	nicotine dependence	DOID_986	alopecia areata	0.10858392564242755
+DOID_0050742	nicotine dependence	DOID_219	colon cancer	0.09899615548910722
+DOID_0050742	nicotine dependence	DOID_10283	prostate cancer	0.09797446059004844
+DOID_0050742	nicotine dependence	DOID_10652	Alzheimer's disease	0.08929913062144468
+DOID_0050742	nicotine dependence	DOID_635	acquired immunodeficiency syndrome	0.08679161088799643
+DOID_0050742	nicotine dependence	DOID_1909	melanoma	0.0806159420289855
+DOID_0050742	nicotine dependence	DOID_1793	pancreatic cancer	0.0744853111265325
+DOID_0050742	nicotine dependence	DOID_8778	Crohn's disease	0.056931872320152455
+DOID_0050742	nicotine dependence	DOID_0050156	idiopathic pulmonary fibrosis	0.05481220657276995
+DOID_0050742	nicotine dependence	DOID_5419	schizophrenia	0.037267080745341616
+DOID_0050742	nicotine dependence	DOID_14330	Parkinson's disease	0.03323593864134405
+DOID_0050742	nicotine dependence	DOID_12365	malaria	0.027842799063693482
+DOID_0050742	nicotine dependence	DOID_11612	polycystic ovary syndrome	0.018729843711237905
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_8577	ulcerative colitis	0.07880884343510303
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_8778	Crohn's disease	0.06598614655486694
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_263	kidney cancer	0.06158848118903855
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_2986	IgA glomerulonephritis	0.05916030534351145
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_0050742	nicotine dependence	0.05481220657276995
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_1793	pancreatic cancer	0.054003724394785846
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_9206	Barrett's esophagus	0.050691985838429356
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_635	acquired immunodeficiency syndrome	0.049429657794676805
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_219	colon cancer	0.04808492922564529
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_10283	prostate cancer	0.04005756776205325
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_10652	Alzheimer's disease	0.039193475305845035
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_14227	azoospermia	0.035998819710829154
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_1909	melanoma	0.03466299862448418
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_12365	malaria	0.030937215650591446
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_986	alopecia areata	0.02922609305588029
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_14330	Parkinson's disease	0.02154993783671778
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_5419	schizophrenia	0.017954070981210855
+DOID_0050156	idiopathic pulmonary fibrosis	DOID_11612	polycystic ovary syndrome	0.014132553606237816
