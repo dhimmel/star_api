@@ -6,12 +6,13 @@ import shutil
 import urllib2
 import StringIO
 import gzip
+import re
 
 from funcy import cat, first, re_all
 import psycopg2
 import psycopg2.extras
 import pandas as pd
-import numpy as np, re
+import numpy as np
 import conf
 
 ###connect to DB###
@@ -64,13 +65,13 @@ def get_matrix_filename(series_id, platform_id):
     raise LookupError("Can't find matrix file for series %s, platform %s"
                       % (series_id, platform_id))
 
-def get_data(series_id, platform_id, impute = True):
+def get_data(series_id, platform_id, impute = False):
     matrixFilename = get_matrix_filename(series_id, platform_id)
     # setup data for specific platform
     for attempt in (0, 1):
         try:
             headerRows = __getMatrixNumHeaderLines(gzip.open(matrixFilename))
-            na_values = ["null", "NA", "NaN", "N/A", "na", "n/a"]
+            na_values = ["null", "NA", "NaN", "N/A", "na", "n/a", ""]
             data = pd.io.parsers.read_table(gzip.open(matrixFilename),
                                             skiprows=headerRows,
                                             index_col=["ID_REF"],
@@ -84,20 +85,20 @@ def get_data(series_id, platform_id, impute = True):
             if attempt:
                 raise
             matrixFilename = get_matrix_filename(series_id, platform_id)
-    data_file_name = "%s_%s.data.csv"
     data = clean_data(data) #drop samples
     if len(data.columns) == 1:
         data = data.dropna()
     elif impute:
         data = impute_data(data)
     data = log_data(data) #logc
+
     data.index = data.index.astype(str)
     data.index.name = "probe"
     data.columns.name = 'gsm_name'
     for column in data.columns:
         data[column] = data[column].astype(np.float64)
 
-    # data.to_csv(data_file_name)
+    # data.to_csv("float64.data.csv")
     return data
 
 
@@ -145,15 +146,15 @@ def query_gene_data(gse_name, gpl_name):
     gene_data.columns = gene_data.columns + "_" + gpl_name + "_" + gse_name
     return gene_data
 
-# def query_data(gse_name, gpl_name):
-#     series_id = query_record(gse_name, "series", "gse_name")['id']
-#     platform_id = query_record(gpl_name, "platform", "gpl_name")['id']
-#     data = get_data(series_id, platform_id)
-#     return data
-
+def query_data(gse_name, gpl_name, impute=False):
+    series_id = query_record(gse_name, "series", "gse_name")['id']
+    platform_id = query_record(gpl_name, "platform", "gpl_name")['id']
+    data = get_data(series_id, platform_id, impute)
+    # data.columns = data.columns + "_" + gpl_name + "_" + gse_name
+    return data
 
 def query_tags_annotations(tokens):
-    df = pd.read_sql_query('''
+    df = pd.read_sql('''
         SELECT
             sample_id,
             sample.gsm_name,
@@ -243,37 +244,20 @@ def log_data(df):
         return df
 
     data = df.values
-    floor = np.abs(np.min(data, axis=0))
+    floor = np.abs(np.nanmin(data, axis=0))
     res = ne.evaluate('log(data + floor + 1) / log(2)')
     return pd.DataFrame(res, index=df.index, columns=df.columns)
 
 def is_logged(df):
     return np.max(df.values) < 10
 
-# def is_logged(data):
-#     return True if (data.std() < 10).all() else False
-#
-#
-# def log_data(data):
-#     # if (data.var() > 10).all():
-#     if is_logged(data):
-#         return data
-#     return translate_negative_cols(np.log2(data))
-
-def impute_data(data, suppress=True):
+def impute_data(data):
     import rpy2.robjects as robjects
     r = robjects.r
     import pandas.rpy.common as com
-
-    # data.to_csv("data.csv")
     r.library("impute")
     r_data = com.convert_to_r_matrix(data)
-    if suppress:
-        stdout = sys.stdout
-        sys.stdout = StringIO.StringIO()
     r_imputedData = r['impute.knn'](r_data)
-    if suppress:
-        sys.stdout = stdout
     npImputedData = np.asarray(r_imputedData[0])
     imputedData = pd.DataFrame(npImputedData)
     imputedData.index = data.index
@@ -294,12 +278,6 @@ def translate_negative_cols(data):
     """Translate the minimum value of each col to 1"""
     data = data.replace([np.inf, -np.inf], np.nan) #replace infinities
     return data + np.abs(np.min(data)) + 1
-    # for sample in data.columns:
-    # sampleMin = data[sample].min()
-    # if sampleMin < 1:
-    # absMin = abs(sampleMin)
-    # data[sample] = data[sample].add(absMin + 1)
-    # return data
 
 def clean_data(data):
     """convenience function to trannslate the data before analysis"""
@@ -307,7 +285,3 @@ def clean_data(data):
         # data = log_data(translate_negative_cols(data))
         data = drop_missing_samples(data)
     return data
-
-if __name__ == "__main__":
-    data = query_gene_data("GSE30530", "GPL6480")
-    # gene_data = query_gene_data("GSE4058","GPL2778")
